@@ -1,0 +1,16 @@
+      <?php
+        $name = $_GET["uname"];
+        $pass = $_GET["upass"];
+
+        //.......connection...
+        $conn = mysqli_connect("localhost", "root", "123", "phptest");
+        // port eka 3306 nemei nam pamanak denava nathnam default 3306 add karagani
+        if (!$conn) {
+            die("connection error @@@@@@@@@@@@@@@" . mysqli_connect_error());
+        }
+        $sql = "insert into user(name,pass) value('" . $name . "','" . $pass . "')";
+        mysqli_query($conn, $sql);
+        mysqli_close();
+        header("Location:application.php");
+        
+        ?>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/QueensTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<title>Queens Garden Hotel</title>
+
+
+<link href="css/WebStyles.css" rel="stylesheet" type="text/css" />
+<link href="css/slide.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="hotel">
+<script type="text/javascript" src="js/QuennsJS.js"></script>
+
+  <header>
+        <a href="s" id="logo"></a>
+        <nav>
+            <ul class="showing">
+                <a href="Index.html"><li>HOME</li></a>
+                <a href="About.html"><li>ABOUT US</li></a>
+                <a href="html/restuarent.html"><li>SERVICES </li></a>
+                <a href="Online.html"><li>ONLINE BOOKING</li></a>
+                <a href="Offers.html"><li>SPECIAL OFFERS</li></a>
+                <a href="QueensGallery.html"><li>GALLERY</li></a>
+                <a href="ContactUs.html"><li>CONTACT US</li></a>
+            </ul>
+            <div class="handle">Menu</div>
+      </nav>
+</header><!-- InstanceBeginEditable name="EditRegion1" -->
+
+<section id="pagecontent">  
+
+<br /><h1><b>Contact Us</b></h1>
+
+<div class="container">
+    <div class="box">
+        <div class="row">
+            <div class="col-lg-12">
+               <hr>
+               <h2 class="intro-text text-center"><strong>Contact Details</strong></h2>
+               </hr>
+            </div>
+            
+            <div class="col-md-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.488897077815!2d79.83371059658029!3d6.913174334113576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25960d359dbbf%3A0xd64947e9ab7a4c4f!2sColombo+03%2C+Colombo!5e0!3m2!1sen!2slk!4v1480751526717" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="col-md-4">
+                <p>Phone :
+                   <strong>0714554554</strong>
+                </p>
+                <p>Email :
+                   <strong><a href="#">queensgardeninfo.com</a></strong>
+                </p>
+                <p>Address :
+                   <strong>No:127
+                   <br />Galle road
+                   <br />Colombo 03
+                   </strong>
+                </p>   
+            </div>
+        </div>
+     </div><br /><br />
+     
+  <div class="box">
+        <div class="row">
+               <hr>
+               <h2 class="intro-text text-center"><strong>Contact Form</strong></h2>
+               </hr>
+               <p>Enter your Name,Email,Phone Number and Message you want to sent us.We kindly inform you with the                  reply quick as possible to your email and phone number you provide.Please be honest to enter correct                  detail with this form.
+               </p>
+               <form action="php/contact.php" method="post">
+                   <table width="505" border="1">
+                     <tbody>
+                       <tr height="40">
+                         <td width="158">Name</td>
+                         <td width="331"><input type="text" name="txtcname" class="form-control" size="50" id="contact"></td>
+                       </tr>
+                       <tr height="40">
+                         <td><label>Email</label></td>
+                         <td><input type="email" name="txtcemail" class="form-control" size="50" id="contact"></td>
+                       </tr>
+                       <tr height="40">
+                         <td><label>Phone Number</label></td>
+                         <td><input type="tel" name="txtctel" class="form-control" size="50" id="contact"></td>
+                       </tr>
+                       <tr height="160">
+                         <td><span class="form-group col-lg-12">Message</span></td>
+                         <td><span class="form-group col-lg-12">
+                           <textarea name="textarea" name="txtarea" cols="38" rows="6" class="form-control" id="contact"></textarea>
+                         </span></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   <input type="hidden" name="save" value="contact">
+                   <button type="submit" class="btn btn-default" id="button1">Submit</button>
+              </form>
+              <br /><br />
+              </div>
+              </div>
+              
+              <br /><br /><br />
+</section> 
+
+
+
+<!-- InstanceEndEditable -->
+<footer>
+            <section>       
+                <h3><b>Contact Details</b></h3>
+                <p><b>TEL:071-4554554</b><br /><br />
+                NO:127<br />
+                Galle Road<br />
+                Colombo 03<br />
+                queensgardeninfo.com</p>
+            </section>
+            <section>                
+                <h3>Connect With Us</h3>
+                <ul class="social">
+                     <li><a href="s"><img src="images/resize%20images/facebook.png" /></a></li>
+                     <li><a href="s"><img src="images/resize%20images/googleplus.png" /></a></li>
+                     <li><a href="s"><img src="images/resize%20images/twitter.png" /></a></li>
+                     <li><a href="s"><img src="images/resize%20images/youtube.png" /></a></li>
+                </ul>     
+            </section>
+            <section>
+                <img src="images/resize%20images/Queens%20garden%20hotel.gif" />
+            </section>
+        </footer>
+        
+</div>               
+                
+ <script>
+   $('.handle').on('click',functin(){
+	   $('nav ul').toggleclass('showing');
+   });
+</script>                                    
+
+</body>
+<!-- InstanceEnd --></html>

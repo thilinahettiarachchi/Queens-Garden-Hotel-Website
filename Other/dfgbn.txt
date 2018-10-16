@@ -1,0 +1,11 @@
+   //-------- Fuzzipication
+        //--------d- Creating fuzzy Sets
+//                (95-25)/(5-75)=(y3-25)/(40-75)
+        double dps = ((95 - 25) / (5 - 75)) * (40 - 75) + 25;
+            
+//        (75-20)/(100-25)=(y3-20)/(145-25)
+                
+         double sdp = (((75-20)/(100-25))*(speed-25))+20;
+         
+         double OutPutCRISP= (dps+sdp)/2;
+         System.out.println(OutPutCRISP);

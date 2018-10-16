@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/subtemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Queens Garden Hotel</title>
+<!-- InstanceEndEditable -->
+<link href="../css/WebStyles.css" rel="stylesheet" type="text/css" />
+<link href="../css/slide.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="hotel">
+<script type="text/javascript" src="../js/QuennsJS.js"></script>
+
+  <header>
+        <a href="../s" id="logo"></a>
+        <nav>
+            <ul class="showing">
+                <a href="../Index.html"><li>BACK TO HOME</li></a>
+                <a href="room.html"><li>ROOM</li></a>
+                <a href="food.html"><li>FOOD & BEVERAGES</li></a>
+                <a href="cottages.html"><li>COTTAGES </li></a>
+                <a href="hall.html"><li>RECEPTION HALLS</li></a>
+            </ul>
+            <div class="handle">Menu</div>
+      </nav>
+</header>><!-- InstanceBeginEditable name="EditRegion2" -->
+
+<section id="pagecontent">
+
+<br /><br /><br /><h1><b>Cottage Reservation</b></h1>
+
+<div class="container"><br />
+
+    <div class="box">
+			<form  action="../php/cottage.php" method="post" autocomplete="on"> 
+			  <h1> Reserve Details </h1>
+				<table width="503" height="112" border="1">
+				  <tbody>
+                    <tr height="40">
+				      <td width="70"> Cottage Type			          </td>				      
+                      <td width="417"> <select name="cpackage" id="reserve">
+                                      <option value="lagoon">LAGOON</option>
+                                      <option value="londongrill">LONDON GRILL</option>
+                                      <option value="thaprobane">THAPROBANE</option>
+                                      <option value="nugagama">NUGA GAMA</option>
+                                      <option value="chutneys">CHUTNEYS</option>
+                                      </select> 
+                                      </td>			        
+                    </tr>
+                    <tr height="40">
+				      <td width="70"> Number of Members			          </td>
+                      <td width="417"> <select name="cqty" id="reserve">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                      </select> 
+                                      </td>			        
+                    </tr>
+				    <tr height="40">
+				      <td width="330"> Meal Plan			          </td>
+                      <td width="78"> <select name="cmeal" id="reserve">
+                                      <option value="breakfast">BRAEKFAST</option>
+                                      <option value="lunch">LUNCH</option>
+                                      <option value="dinner">DINNER</option>
+                      </td>
+			        </tr>
+                    </tbody>
+			  </table>
+              
+                      <span class="ok button">
+                      <input type="submit" value="BOOKING" id="button1"/>
+                      </span>
+                     
+			</form>
+            <br /><br />
+            </div>
+        </div>  <br /><br /><br />
+  
+</section>
+
+<!-- InstanceEndEditable -->
+<footer>
+            <section>       
+                <h3><b>Contact Details</b></h3>
+                <p><b>TEL:071-4554554</b><br /><br />
+                NO:127<br />
+                Galle Road<br />
+                Colombo 03<br />
+                queensgardeninfo.com</p>
+            </section>
+            <section>                
+                <h3>Connect With Us</h3>
+                <ul class="social">
+                     <li><a href="../s"><img src="../images/resize%20images/facebook.png" /></a></li>
+                     <li><a href="../s"><img src="../images/resize%20images/googleplus.png" /></a></li>
+                     <li><a href="../s"><img src="../images/resize%20images/twitter.png" /></a></li>
+                     <li><a href="../s"><img src="../images/resize%20images/youtube.png" /></a></li>
+                </ul>     
+            </section>
+            <section>
+                <img src="../images/resize%20images/Queens%20garden%20hotel.gif" />
+            </section>
+        </footer>
+        
+</div>               
+                
+ <script>
+   $('.handle').on('click',functin(){
+	   $('nav ul').toggleclass('showing');
+   });
+</script>                                    
+
+</body>
+<!-- InstanceEnd --></html>

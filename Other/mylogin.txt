@@ -1,0 +1,23 @@
+<?php
+if(isset($_POST["txtusername"]))
+{
+	$un = $_POST["txtusername"];
+	$pw = $_POST["txtpw"];
+	
+	$con = new mysql_connect("localhost:8080","root","");
+	$db = mysql_select_db("queensgarden", $con);
+	$sql = "SELECT * FROM register WHERE username='$un' AND password = '$pw'";
+	
+	$result = mysql_query($sql);
+	if($row = mysql_fetch_array($result))
+	{
+		header("location:home.html?un=$un");
+		
+	}
+	else
+	{
+		
+		echo "<b><font color='red'>Invalid username or password</font></b>";
+	}
+}
+?>
